@@ -1,0 +1,33 @@
+.footer-wrapper {
+  background: $black;
+  color: $white;
+  .footer-logo {
+    width: rem-calc(200);
+    margin: $global-margin auto;
+    img {
+      width: 100%;
+    }
+  }
+  
+  .footer-contact {
+    margin: calc( #{$global-margin} * 2 ) 0;
+    p {
+      margin: 0;
+      font-size: rem-calc(18);
+    }
+  }
+  
+  .footer-menu {
+    a {
+      color: $white;
+      text-transform: uppercase;
+    }
+  }
+  
+  .footer-copyright {
+    p {
+      font-size: rem-calc(14);
+    }
+  }
+
+}
