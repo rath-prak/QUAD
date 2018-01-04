@@ -41,12 +41,13 @@ $(document).ready(function() {
         sectionSelector: '.section',
         animateAnchor: false,
 				onLeave: function(anchorLink, index){
-					if (index === 2) {
-						// $('.bar').css({
-						// 	'background': 'rgba(0, 0, 0, 1)',
-						// });
-						// $('.bar').addClass('reverse');
-				 	}
+					if (index === 1) {
+						$('.logo-white').addClass('active');
+						$('.logo-black').removeClass('active');
+				 	} else {
+						$('.logo-black').addClass('active');
+						$('.logo-white').removeClass('active');
+					}
 				},
 
 	});

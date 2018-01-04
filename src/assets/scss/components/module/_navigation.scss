@@ -1,3 +1,17 @@
+// Logo
+.logo-white, .logo-black {
+  position: absolute;
+  top: rem-calc(30);
+  left: rem-calc(30);
+  z-index: 150;
+  width: rem-calc(30);
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
 // Hamburger Toggle
 
 $bar-width: rem-calc(35);
@@ -96,6 +110,6 @@ $bar-spacing: rem-calc(10);
   }
 
   span:hover {
-    color: yellow;
+    color: $accent-color;
   }
 }
