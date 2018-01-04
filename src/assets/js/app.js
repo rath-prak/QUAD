@@ -1,7 +1,10 @@
 // import $ from 'jquery';
 import whatInput from 'what-input';
-// import pagepiling from './lib/jquery.pagepiling.min.js';
+import {TweenMax, Power2, TimelineLite} from "gsap";
+import overlayNav from './components/overlayNav';
 // window.$ = $;
+
+
 
 import Foundation from 'foundation-sites';
 // If you want to pick and choose which modules to include, comment out the above and uncomment
@@ -9,6 +12,45 @@ import Foundation from 'foundation-sites';
 //import './lib/foundation-explicit-pieces';
 
 $(document).ready(function() {
-	$('#pagepiling').pagepiling();
+
+	// Full screen overlay menu
+	overlayNav();
+
+	// pagepiling
+	$('#pagepiling').pagepiling({
+	    menu: null,
+        direction: 'vertical',
+        verticalCentered: true,
+        sectionsColor: [],
+        anchors: [],
+        scrollingSpeed: 700,
+        easing: 'swing',
+        loopBottom: false,
+        loopTop: false,
+        css3: true,
+        navigation: {
+            'textColor': '#000',
+            'bulletsColor': '#000',
+            'position': 'right',
+            'tooltips': ['section1', 'section2', 'section3', 'section4']
+        },
+       	normalScrollElements: null,
+        normalScrollElementTouchThreshold: 5,
+        touchSensitivity: 5,
+        keyboardScrolling: true,
+        sectionSelector: '.section',
+        animateAnchor: false,
+				onLeave: function(anchorLink, index){
+					if (index === 2) {
+						// $('.bar').css({
+						// 	'background': 'rgba(0, 0, 0, 1)',
+						// });
+						// $('.bar').addClass('reverse');
+				 	}
+				},
+
+	});
+
+
 });
 // $(document).foundation();

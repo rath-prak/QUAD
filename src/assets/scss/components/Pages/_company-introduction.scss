@@ -1,0 +1,27 @@
+.company-intro-wrapper {
+  background: $white;
+  h5 {
+    text-transform: uppercase;
+    color: $dark-gray;
+  }
+  p {
+    font-size: rem-calc(24);
+  }
+
+  .business-links-wrapper {
+    .business-links {
+      margin: rem-calc(40) 0;
+      padding: rem-calc(20) 0;
+    }
+    .link-logo {
+      display: flex;
+      align-items: center;
+      padding: rem-calc(5);
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  
+}
