@@ -7,11 +7,13 @@ const overlayNav = () => {
     $('.bar').toggleClass('animate');
   });
 
-  const tl = new TimelineMax({ paused:true, reversed:true })
+  const tl = new TimelineMax({ delay:6, paused:true, reversed:true })
   tl.to($overlayNav, 1, { y: '0%', ease: Power2.easeOut })
 
   $hamburgerMenu.on('click', () => {
-    tl.reversed() ? tl.restart() : tl.reverse();
+    setTimeout(function(){
+        tl.reversed() ? tl.restart() : tl.reverse();
+      }, 400);
   })
 }
 
