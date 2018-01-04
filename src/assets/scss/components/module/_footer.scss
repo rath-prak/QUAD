@@ -1,33 +1,23 @@
 .footer-wrapper {
   background: $black;
   color: $white;
-  .footer-logo {
-    width: rem-calc(200);
-    margin: $global-margin auto;
-    img {
-      width: 100%;
-    }
+  text-align: center;
+  h6 {
+    text-transform: uppercase;
+    letter-spacing: 6px;
   }
-  
-  .footer-contact {
-    margin: calc( #{$global-margin} * 2 ) 0;
-    p {
-      margin: 0;
-      font-size: rem-calc(18);
-    }
-  }
-  
-  .footer-menu {
-    a {
-      color: $white;
-      text-transform: uppercase;
-    }
-  }
-  
-  .footer-copyright {
+
+  .address, .copyright {
+    position: absolute;
+    bottom: rem-calc(30);
     p {
       font-size: rem-calc(14);
     }
   }
-
+  .address {
+    left: rem-calc(30)
+  }
+  .copyright {
+    right: rem-calc(30)
+  }
 }

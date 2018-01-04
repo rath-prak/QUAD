@@ -1,0 +1,11 @@
+.contact-wrapper {
+  background: $black;
+  .contact-item {
+    text-align: center;
+    color: $white;
+    h6 {
+      text-transform: uppercase;
+      letter-spacing: 6px;
+    }
+  }
+}
