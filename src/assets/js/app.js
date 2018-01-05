@@ -2,6 +2,9 @@
 import whatInput from 'what-input';
 import {TweenMax, Power2, TimelineLite} from "gsap";
 import overlayNav from './components/overlayNav';
+
+import textSlide from './components/textSlide.js';
+
 // window.$ = $;
 
 
@@ -12,6 +15,8 @@ import Foundation from 'foundation-sites';
 //import './lib/foundation-explicit-pieces';
 
 $(document).ready(function() {
+
+	const $workplaceTextSlide = $('.workplace-textslide');
 
 	// Full screen overlay menu
 	overlayNav();
@@ -47,10 +52,23 @@ $(document).ready(function() {
 				 	} else {
 						$('.logo-black').addClass('active');
 						$('.logo-white').removeClass('active');
-					}
+					};
+
+					if (index === 3) {
+						textSlide.fadeInText($workplaceTextSlide);
+					};
 				},
 
 	});
+
+	// set strate
+	const setState = () => {
+		TweenMax.set([$workplaceTextSlide], {
+			alpha: 0,
+			y: 30,
+		});
+	};
+	setState();
 
 
 });
