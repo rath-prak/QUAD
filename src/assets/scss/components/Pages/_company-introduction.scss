@@ -5,13 +5,13 @@
     color: $dark-gray;
   }
   p {
-    font-size: rem-calc(24);
+    font-size: rem-calc(18);
   }
 
   .business-links-wrapper {
     .business-links {
-      margin: rem-calc(40) 0;
-      padding: rem-calc(20) 0;
+      margin: rem-calc(10) 0;
+      padding: rem-calc(10) 0;
     }
     .link-logo {
       display: flex;
@@ -23,4 +23,16 @@
     }
   }
 
+}
+
+@media screen and (min-width: 40em) {
+  .company-intro-wrapper {
+    p {
+      font-size: rem-calc(24);
+    }
+    .business-links {
+      margin: rem-calc(40) 0;
+      padding: rem-calc(20) 0;
+    }
+  }
 }

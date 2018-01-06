@@ -26,7 +26,6 @@ $(document).ready(function() {
 	    menu: null,
         direction: 'vertical',
         verticalCentered: true,
-        sectionsColor: [],
         anchors: [],
         scrollingSpeed: 700,
         easing: 'swing',
@@ -39,14 +38,15 @@ $(document).ready(function() {
             'position': 'right',
             'tooltips': ['section1', 'section2', 'section3', 'section4']
         },
-       	normalScrollElements: null,
+       	normalScrollElements: 'pp-scrollable',
         normalScrollElementTouchThreshold: 5,
         touchSensitivity: 5,
         keyboardScrolling: true,
         sectionSelector: '.section',
         animateAnchor: false,
-				onLeave: function(anchorLink, index){
-					if (index === 1) {
+				afterLoad: (anchorLink, index) => {
+					//change color of logo for different sections
+					if (index === 1 || index === 6) {
 						$('.logo-white').addClass('active');
 						$('.logo-black').removeClass('active');
 				 	} else {
@@ -54,12 +54,18 @@ $(document).ready(function() {
 						$('.logo-white').removeClass('active');
 					};
 
-					if (index === 3) {
+					//Fade in text animation
+					if ( index === 3 ) {
 						textSlide.fadeInText($workplaceTextSlide);
 					};
 				},
-
+				onLeave: (index, nextIndex, direction) => {
+	     		if (index === 3 && direction === 'up' || index === 3 && direction === 'down') {
+	       	 textSlide.resetfadeText($workplaceTextSlide, 0, 20, 1);
+	      	}
+    		},
 	});
+	// end of page pilling
 
 	// set strate
 	const setState = () => {

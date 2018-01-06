@@ -1,0 +1,14 @@
+// align content on full page sections vertical center
+
+.fp-center-vertical {
+  display: flex;
+  align-items: center;
+  padding: calc(#{$global-padding} * 2);
+  min-height: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .fp-center-vertical {
+    height: 100%;
+  }
+}
