@@ -47,17 +47,18 @@ $(document).ready(function() {
         animateAnchor: false,
 				afterLoad: (anchorLink, index) => {
 
-					// if (index === 1 || index === 6) {
-					// 	$('.logo-white').addClass('active');
-					// 	$('.logo-black').removeClass('active');
-				 	// } else {
-					// 	$('.logo-black').addClass('active');
-					// 	$('.logo-white').removeClass('active');
-					// };
+					if ( index === 1 ) {
+						$('#pp-nav').removeClass('pp-nav-show');
+					}
+
+					if ( index === 2 ) {
+						$('#pp-nav').addClass('pp-nav-show');
+				 	}
 
 					//Fade in text animation
 					if ( index === 3 ) {
 						fadeUp.fadeInText($workplacefadeUp);
+						$('#pp-nav').addClass('pp-nav-show');
 					};
 
 					if ( index === 4 ) {
@@ -65,6 +66,13 @@ $(document).ready(function() {
 					}
 				},
 				onLeave: (index, nextIndex, direction) => {
+
+					// if ( index === 2 && direction === 'up' ) {
+					// 	$('#pp-nav').css({
+					// 		'display':'none',
+					// 	});
+					// }
+
 	     		if (index === 3 && direction === 'up' || index === 3 && direction === 'down') {
 	       	 fadeUp.resetfadeText($workplacefadeUp, 0, 20, 1);
 				 };

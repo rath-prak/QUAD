@@ -39,7 +39,13 @@ html, body {
     margin-top: -32px;
     top: 50%;
     opacity: 1;
+    display: none;
 }
+
+.pp-nav-show {
+    display: block !important;
+}
+
 #pp-nav.right {
     right: 17px;
 }
@@ -109,6 +115,7 @@ html, body {
     position: absolute;
     z-index: 1;
 }
+
 .pp-tooltip {
     position: absolute;
     top: -2px;

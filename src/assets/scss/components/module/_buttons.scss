@@ -9,9 +9,9 @@
     cursor: pointer;
     transition: all 1s ease;
     overflow: hidden;
+    text-align: center;
     a {
       line-height: rem-calc(38);
-      margin-bottom: 0px !important;
       text-align: center;
       text-transform: uppercase;
       font-weight: bold;
@@ -19,17 +19,19 @@
       z-index: 1;
       transition: all 1s ease;
       color: $white;
+      font-size: rem-calc(14);
+      font-weight: 400;
     }
   }
-  
+
   .btn-secondary {
     border: 1px solid $black;
     a {
       color: $black;
     }
-  } 
-  
-  .btn-primary:before, 
+  }
+
+  .btn-primary:before,
   .btn-secondary:before {
     content: "";
     width: 100%;
@@ -38,26 +40,26 @@
     position: absolute;
     transition: all 1s ease;
   }
-  
+
   .btn-secondary:before{
     background-color: $black;
   }
-  
-  .btn-primary:before, 
+
+  .btn-primary:before,
   .btn-secondary:before {
     top: 0;
     left: -210px;
   }
-  
+
   .btn-primary:hover:before,
   .btn-secondary:hover:before {
     left: 0;
   }
-  
+
   .btn-primary:hover a{
     color: #7a909a;
   }
-  
+
   .btn-secondary:hover a{
     color: $white;
   }
