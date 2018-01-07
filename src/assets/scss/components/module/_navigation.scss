@@ -1,24 +1,28 @@
+//   1. Logo
+//   2. Toggle Menu
+//   3. Overlay menu
+
+
+
 // Logo
+// ----
+
 .logo-white, .logo-black {
   position: absolute;
   top: rem-calc(30);
   left: rem-calc(30);
-  z-index: 150;
+  z-index: 1000;
   width: rem-calc(30);
-  display: none;
 }
 
-.active {
-  display: block;
-}
 
-// Hamburger Toggle
-
+// Toggle Menu
+// ----------------
 $bar-width: rem-calc(35);
 $bar-height: rem-calc(1);
 $bar-spacing: rem-calc(10);
 
-.hamburger-menu {
+.toggle-menu {
   position: absolute;
   z-index: 150;
   top: rem-calc(30);
@@ -35,14 +39,19 @@ $bar-spacing: rem-calc(10);
 	height: $bar-height;
 }
 
+.bar:after,
+.bar:before {
+  transform: scaleX(0.65);
+}
+
 .bar {
 	position: relative;
 	transform: translateY($bar-spacing);
-	background: rgba(255, 255, 255, 1);
+	background: rgba(0, 0, 0, 1);
 	transition: all 0ms 300ms;
 
   &.animate {
-    background: rgba(255, 255, 255, 0);
+    background: rgba(0, 0, 0, 0);
   }
 }
 
@@ -51,7 +60,7 @@ $bar-spacing: rem-calc(10);
 	position: absolute;
 	left: 0;
 	bottom: $bar-spacing;
-	background: rgba(255, 255, 255, 1);
+	background: rgba(0, 0, 0, 1);
 	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -60,8 +69,21 @@ $bar-spacing: rem-calc(10);
 	position: absolute;
 	left: 0;
 	top: $bar-spacing;
-	background: rgba(255, 255, 255, 1);
+	background: rgba(0, 0, 0, 1);
 	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+// reverse the color of bar on dark background
+.bar.bar-reverse {
+	background: rgba(255, 255, 255, 1);
+  &.animate {
+    background: rgba(255, 255, 255, 0);
+  }
+}
+
+.bar.bar-reverse:before,
+.bar.bar-reverse:after {
+  background: rgba(255, 255, 255, 1);
 }
 
 .bar.animate:after {
@@ -77,6 +99,8 @@ $bar-spacing: rem-calc(10);
 }
 
 // Overlay menu
+// ------------
+
 .overlay-nav {
   z-index: 100;
   position: absolute;
@@ -95,12 +119,13 @@ $bar-spacing: rem-calc(10);
   }
 }
 
-// Learn more side button
+// 'Learn more' side button
+// ------------------------
+
 .learn-more-wrapper {
   z-index: 150;
   position: absolute;
   bottom: rem-calc(60);
-  // left: rem-calc(30);
   transform: rotate(90deg);
   span {
     color: $white;

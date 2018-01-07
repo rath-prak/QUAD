@@ -1,5 +1,5 @@
 // Animated Typography - text slide
-	const textSlide = {
+	const fadeUp = {
 		 // animate text
 		fadeInText: (section) => {
 			TweenMax.staggerTo(section, 1 , {
@@ -19,4 +19,4 @@
 
 	};
 
-export default textSlide;
+export default fadeUp;

@@ -1,9 +1,9 @@
 // import $ from 'jquery';
 import whatInput from 'what-input';
-import {TweenMax, Power2, TimelineLite} from "gsap";
+import { TweenMax, Power2, TimelineLite } from "gsap";
 import overlayNav from './components/overlayNav';
 
-import textSlide from './components/textSlide.js';
+import fadeUp from './components/fadeUp.js';
 
 // window.$ = $;
 
@@ -16,7 +16,8 @@ import Foundation from 'foundation-sites';
 
 $(document).ready(function() {
 
-	const $workplaceTextSlide = $('.workplace-textslide');
+	const $workplacefadeUp = $('.workplace-fadeUp');
+	const $businessfadeUp = $('.business-fadeUp');
 
 	// Full screen overlay menu
 	overlayNav();
@@ -45,31 +46,39 @@ $(document).ready(function() {
         sectionSelector: '.section',
         animateAnchor: false,
 				afterLoad: (anchorLink, index) => {
-					//change color of logo for different sections
-					if (index === 1 || index === 6) {
-						$('.logo-white').addClass('active');
-						$('.logo-black').removeClass('active');
-				 	} else {
-						$('.logo-black').addClass('active');
-						$('.logo-white').removeClass('active');
-					};
+
+					// if (index === 1 || index === 6) {
+					// 	$('.logo-white').addClass('active');
+					// 	$('.logo-black').removeClass('active');
+				 	// } else {
+					// 	$('.logo-black').addClass('active');
+					// 	$('.logo-white').removeClass('active');
+					// };
 
 					//Fade in text animation
 					if ( index === 3 ) {
-						textSlide.fadeInText($workplaceTextSlide);
+						fadeUp.fadeInText($workplacefadeUp);
 					};
+
+					if ( index === 4 ) {
+						fadeUp.fadeInText($businessfadeUp);
+					}
 				},
 				onLeave: (index, nextIndex, direction) => {
 	     		if (index === 3 && direction === 'up' || index === 3 && direction === 'down') {
-	       	 textSlide.resetfadeText($workplaceTextSlide, 0, 20, 1);
-	      	}
+	       	 fadeUp.resetfadeText($workplacefadeUp, 0, 20, 1);
+				 };
+
+				  if (index === 4 && direction === 'up' || index === 4 && direction === 'down') {
+				 	  fadeUp.resetfadeText($businessfadeUp, 0, 20, 1);
+				 	};
     		},
 	});
 	// end of page pilling
 
 	// set strate
 	const setState = () => {
-		TweenMax.set([$workplaceTextSlide], {
+		TweenMax.set([$workplacefadeUp, $businessfadeUp], {
 			alpha: 0,
 			y: 30,
 		});
