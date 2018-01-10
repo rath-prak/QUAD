@@ -16,8 +16,8 @@ import Foundation from 'foundation-sites';
 
 $(document).ready(function() {
 
-	const $workplacefadeUp = $('.workplace-fadeUp');
-	const $businessfadeUp = $('.business-fadeUp');
+	let $workplacefadeUp = $('.workplace-fadeUp');
+	let $businessfadeUp = $('.business-fadeUp');
 
 	// Full screen overlay menu
 	overlayNav();

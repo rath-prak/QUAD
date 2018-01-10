@@ -2,6 +2,7 @@ const overlayNav = () => {
 
   let $overlayNav = $('.overlay-nav');
   let $toggleMenu = $('.toggle-menu');
+  let $toggleOverlay = $('.toggle-overlay');
 
   $toggleMenu.on('click', function() {
     $('.bar').toggleClass('animate');

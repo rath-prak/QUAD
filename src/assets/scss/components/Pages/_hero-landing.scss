@@ -2,3 +2,23 @@
   background: $black;
   color: $white;
 }
+
+// 'Learn more' side button
+// ------------------------
+
+.learn-more-wrapper {
+  z-index: 150;
+  position: absolute;
+  bottom: rem-calc(60);
+  transform: rotate(90deg);
+  span {
+    color: $white;
+    text-transform: uppercase;
+    font-size: rem-calc(12);
+    cursor: pointer;
+  }
+
+  span:hover {
+    color: $accent-color;
+  }
+}
