@@ -3,6 +3,27 @@
   color: $white;
 }
 
+
+.hero-content {
+  .hero-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img {
+      width: rem-calc(300);
+    }
+    img:last-child {
+      margin-top: rem-calc(30);
+    }
+  }
+  h5 {
+    text-transform: uppercase;
+    letter-spacing: rem-calc(5);
+  }
+}
+
+
 // 'Learn more' side button
 // ------------------------
 

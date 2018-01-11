@@ -10,9 +10,26 @@
   position: absolute;
   top: rem-calc(30);
   left: rem-calc(30);
-  z-index: 1000;
-  width: rem-calc(30);
+  z-index: 500;
+  width: rem-calc(80);
+  // transform: rotate(90deg);
 }
+
+// Social Media icons
+
+.social-menu {
+  position: absolute;
+  bottom: rem-calc(30);
+  right: rem-calc(30);
+  z-index: 500;
+  width: rem-calc(60);
+  .social-menu-item {
+    li {
+      display: inline-block;
+    }
+  }
+}
+
 
 
 // Toggle Menu
@@ -102,7 +119,7 @@ $bar-spacing: rem-calc(10);
 // ------------
 
 .overlay-nav {
-  z-index: 100;
+  z-index: 1000;
   background: $white;
   position: fixed;
   transform: translateY(-100%);

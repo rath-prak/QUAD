@@ -14,7 +14,7 @@ const overlayNav = () => {
   $toggleMenu.on('click', () => {
     setTimeout(function(){
         tl.reversed() ? tl.restart() : tl.reverse();
-      }, 400);
+      }, 600);
   })
 }
 
