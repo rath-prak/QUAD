@@ -2,11 +2,16 @@
   background: $black;
   text-align: center;
   color: $white;
+  
+  .people-intro {
+    font-size: rem-calc(18);
+    font-weight: 400;
+    margin-bottom: rem-calc(60);
+  }
   .contact-item {
-
     h6 {
       text-transform: uppercase;
-      // letter-spacing: 3px;
+      margin-bottom: 0;
     }
   }
 }

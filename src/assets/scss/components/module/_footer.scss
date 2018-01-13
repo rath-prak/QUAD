@@ -1,11 +1,6 @@
 .footer-wrapper {
   background: $black;
   color: $white;
-  text-align: center;
-  h6 {
-    text-transform: uppercase;
-    letter-spacing: 6px;
-  }
 
   .address, .copyright {
     position: absolute;
@@ -19,5 +14,35 @@
   }
   .copyright {
     right: rem-calc(30)
+  }
+
+  .contact-heading {
+    margin-bottom: rem-calc(30);
+  }
+}
+
+form {
+  label {
+    color: $white;
+    text-transform: uppercase;
+    font-size: rem-calc(12);
+    .input-box {
+      background: $black;
+      border: none;
+      border-bottom: 1px solid $white;
+    }
+    .input-box-2 {
+      border-bottom: 2px solid $white;
+    }
+    .input-box:focus {
+      background: $white;
+      color: $white;
+    }
+    textarea {
+      background: $black;
+    }
+  }
+  .btn-submit {
+    margin: 0 auto;
   }
 }

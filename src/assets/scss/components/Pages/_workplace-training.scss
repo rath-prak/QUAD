@@ -1,16 +1,7 @@
 .workplace-training {
   background: $white;
-  p:first-of-type {
-    text-transform: uppercase;
-    letter-spacing: rem-calc(5);
-    font-weight: 600;
-  }
-  h1 {
+  h4 {
     font-weight: 400;
     font-size: rem-calc(50);
-  }
-  
-  img {
-    margin-top: 20px;
   }
 }

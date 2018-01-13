@@ -9,3 +9,12 @@ p {
   font-family: 'Khula', sans-serif;
   font-weight: 300;
 }
+
+// Headings
+
+.intro-heading {
+  text-transform: uppercase;
+  letter-spacing: rem-calc(5);
+  font-weight: 600;
+  color: $dark-gray;
+}

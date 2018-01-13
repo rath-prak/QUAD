@@ -6,13 +6,16 @@
 // Logo
 // ----
 
-.logo-white, .logo-black {
+.logo-white, .logo-black, .logo-type-black {
   position: absolute;
   top: rem-calc(30);
   left: rem-calc(30);
   z-index: 500;
   width: rem-calc(80);
-  // transform: rotate(90deg);
+}
+
+.logo-type-black {
+  width: rem-calc(180);
 }
 
 // Social Media icons
@@ -22,10 +25,14 @@
   bottom: rem-calc(30);
   right: rem-calc(30);
   z-index: 500;
-  width: rem-calc(60);
-  .social-menu-item {
-    li {
-      display: inline-block;
+  span {
+    color: $white;
+    a {
+      color: $white;
+      margin-left: rem-calc(10);
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: rem-calc(12);
     }
   }
 }
