@@ -14,24 +14,31 @@ const overlayNav = () => {
   const tl = new TimelineMax({ delay:6, paused:true, reversed:true })
   tl.to($overlayNav, 1, { y: '0%', ease: Power2.easeOut })
 
-  $toggleMenu.on('click', () => {
+  let slide = () => {
     setTimeout(function(){
         tl.reversed() ? tl.restart() : tl.reverse();
       }, 600);
+  }
+
+  $toggleMenu.on('click', () => {
+      slide();
   })
 
   $menuWorkplace.on('click', function(){
-    tl.reversed() ? tl.restart() : tl.reverse();
+    $('.bar').toggleClass('animate');
+    slide();
   	$.fn.pagepiling.moveTo(3);
   });
 
   $menuBusSupport.on('click', function(){
-    tl.reversed() ? tl.restart() : tl.reverse();
+    $('.bar').toggleClass('animate');
+    slide();
     $.fn.pagepiling.moveTo(4);
   });
 
   $events.on('click', function(){
-    tl.reversed() ? tl.restart() : tl.reverse();
+    $('.bar').toggleClass('animate');
+    slide();
     $.fn.pagepiling.moveTo(5);
   });
 
