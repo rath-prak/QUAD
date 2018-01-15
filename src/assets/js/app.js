@@ -64,6 +64,7 @@ $(document).ready(function() {
 					if ( index === 4 ) {
 						fadeUp.fadeInText($businessfadeUp);
 					}
+
 				},
 				onLeave: (index, nextIndex, direction) => {
 

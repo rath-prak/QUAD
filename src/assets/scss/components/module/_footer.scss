@@ -55,9 +55,10 @@ form {
     font-size: rem-calc(12);
     .input-box, textarea {
       color: $white;
-      background: transparent;
+      // background: transparent;
+      background: #2a2a2a;
       border: none;
-      border-bottom: 1px solid $dark-gray;
+      // border-bottom: 1px solid $dark-gray;
     }
     input,
     .input-box:focus,

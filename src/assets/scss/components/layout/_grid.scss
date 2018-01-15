@@ -4,13 +4,6 @@
   height: 100%;
 }
 
-@media screen and (min-width: 40em) {
-  .fp-center-vertical-wrap {
-    height: 100%;
-    margin: 0;
-  }
-}
-
 .fp-center-vertical {
   display: flex;
   align-items: center;
@@ -18,10 +11,16 @@
   min-height: 100%;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 64em) {
+  .fp-center-vertical-wrap {
+    height: 100%;
+    margin: 0;
+  }
+
   .fp-center-vertical {
     height: 100%;
   }
+  
 }
 
 //background color;
