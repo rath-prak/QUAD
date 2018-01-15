@@ -1,17 +1,22 @@
-.contact-wrapper {
-  background: $black;
+.people-wrapper {
   text-align: center;
-  color: $white;
-  
+  margin: rem-calc($global-margin*5) 0;
   .people-intro {
     font-size: rem-calc(18);
     font-weight: 400;
-    margin-bottom: rem-calc(60);
+    margin-bottom: rem-calc($global-margin*2);
   }
   .contact-item {
     h6 {
       text-transform: uppercase;
       margin-bottom: 0;
     }
+  }
+}
+
+
+@media screen and (min-width: 40em) {
+  .people-wrapper {
+    margin: 0;
   }
 }

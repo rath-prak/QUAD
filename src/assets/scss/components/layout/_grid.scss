@@ -4,6 +4,13 @@
   height: 100%;
 }
 
+@media screen and (min-width: 40em) {
+  .fp-center-vertical-wrap {
+    height: 100%;
+    margin: 0;
+  }
+}
+
 .fp-center-vertical {
   display: flex;
   align-items: center;
@@ -25,10 +32,5 @@
 
 .bg-white {
   background: $white;
-}
-
-// hide toolbar navigation on small screens
-
-@media screen and (min-width: 40em) {
-
+  color: $black;
 }
