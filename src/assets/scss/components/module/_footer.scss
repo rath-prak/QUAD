@@ -1,23 +1,6 @@
 .footer-wrapper {
   margin: rem-calc($global-margin*5) 0;
 
-  .address, .copyright {
-    position: absolute;
-    bottom: rem-calc(30);
-    p {
-      font-size: rem-calc(14);
-    }
-  }
-  .address {
-    left: rem-calc(30)
-  }
-  .copyright {
-    right: rem-calc(30)
-  }
-
-  .contact-heading {
-    margin-bottom: rem-calc(30);
-  }
 }
 
 @media screen and (min-width: 40em) {
@@ -26,10 +9,34 @@
   }
 }
 
+.contact-details {
+  margin-bottom: rem-calc(30);
+  .intro-heading {
+    margin-bottom: rem-calc(20);
+  }
+  i {
+    margin-right: rem-calc(10);
+  }
+  p {
+    font-weight: 300;
+    font-size: rem-calc(16);
+    margin-bottom: 0;
+  }
+  a {
+    color: $white;
+  }
+  p:last-child {
+  margin-top: rem-calc(20);
+  }
+}
 
 // Contact form
 
 form {
+  .form-title {
+    font-size: rem-calc(20);
+    margin-bottom: rem-calc(30);
+  }
   label {
     color: $white;
     text-transform: uppercase;
@@ -37,10 +44,7 @@ form {
     .input-box {
       background: $black;
       border: none;
-      border-bottom: 1px solid $white;
-    }
-    .input-box-2 {
-      border-bottom: 2px solid $white;
+      border-bottom: 1px solid $dark-gray;
     }
     .input-box:focus {
       background: $white;
@@ -49,8 +53,5 @@ form {
     textarea {
       background: $black;
     }
-  }
-  .btn-submit {
-    margin: 0 auto;
   }
 }
