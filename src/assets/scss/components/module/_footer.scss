@@ -9,25 +9,37 @@
   }
 }
 
-.contact-details {
+.contact {
   margin-bottom: rem-calc(30);
   .intro-heading {
     margin-bottom: rem-calc(20);
   }
-  i {
-    margin-right: rem-calc(10);
+  .contact-details {
+    margin-bottom: rem-calc(20);
+    i {
+      margin-right: rem-calc(10);
+    }
+    p {
+      font-weight: 300;
+      font-size: rem-calc(16);
+      margin-bottom: 0;
+    }
+    a {
+      color: $white;
+    }
   }
-  p {
-    font-weight: 300;
-    font-size: rem-calc(16);
-    margin-bottom: 0;
+
+  .social-footer {
+    p {
+      margin-bottom: 0;
+    }
+    font-size: rem-calc(18);
+    i {
+      color: $white;
+    }
   }
-  a {
-    color: $white;
-  }
-  p:last-child {
-  margin: rem-calc(20) 0;
-  }
+
+
 }
 
 // Contact form
@@ -42,6 +54,7 @@ form {
     text-transform: uppercase;
     font-size: rem-calc(12);
     .input-box, textarea {
+      color: $white;
       background: transparent;
       border: none;
       border-bottom: 1px solid $dark-gray;
