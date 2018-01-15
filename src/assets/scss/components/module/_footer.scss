@@ -41,17 +41,17 @@ form {
     color: $white;
     text-transform: uppercase;
     font-size: rem-calc(12);
-    .input-box {
-      background: $black;
+    .input-box, textarea {
+      background: transparent;
       border: none;
       border-bottom: 1px solid $dark-gray;
     }
-    .input-box:focus {
-      background: $white;
+    input,
+    .input-box:focus,
+    textarea:focus {
+      background: transparent;
       color: $white;
     }
-    textarea {
-      background: $black;
-    }
   }
+
 }
