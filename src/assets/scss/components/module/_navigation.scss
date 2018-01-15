@@ -12,6 +12,9 @@
   left: rem-calc(30);
   z-index: 500;
   width: rem-calc(80);
+  img {
+    width: 100%;
+  }
 }
 
 .logo-type-black {

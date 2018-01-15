@@ -40,11 +40,19 @@ html, body {
     top: 50%;
     opacity: 1;
     display: none;
+    visibility: hidden;
+}
+
+@media screen and (min-width: 40em) {
+    #pp-nav {
+      visibility: visible;
+    }
 }
 
 .pp-nav-show {
     display: block !important;
 }
+
 
 #pp-nav.right {
     right: 17px;

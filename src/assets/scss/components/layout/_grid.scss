@@ -1,5 +1,9 @@
 // align content on full page sections vertical center
 
+.fp-center-vertical-wrap {
+  height: 100%;
+}
+
 .fp-center-vertical {
   display: flex;
   align-items: center;
@@ -11,4 +15,20 @@
   .fp-center-vertical {
     height: 100%;
   }
+}
+
+//background color;
+.bg-black {
+  background: $black;
+  color: $white;
+}
+
+.bg-white {
+  background: $white;
+}
+
+// hide toolbar navigation on small screens
+
+@media screen and (min-width: 40em) {
+
 }

@@ -26,7 +26,7 @@ $(document).ready(function() {
 	$('#pagepiling').pagepiling({
 	    menu: null,
         direction: 'vertical',
-        verticalCentered: true,
+        verticalCentered: "pp-scrollable",
         anchors: [],
         scrollingSpeed: 700,
         easing: 'swing',
