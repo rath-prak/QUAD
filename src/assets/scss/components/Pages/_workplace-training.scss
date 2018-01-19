@@ -5,3 +5,16 @@
     font-size: rem-calc(50);
   }
 }
+
+
+@media screen and (min-width: 40em) {
+  .workplace-training {
+    background: green;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .workplace-training {
+    background: pink;
+  }
+}

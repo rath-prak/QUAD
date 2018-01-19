@@ -11,6 +11,10 @@
   min-height: 100%;
 }
 
+.section {
+  padding: $global-padding*2;
+}
+
 @media screen and (min-width: 64em) {
   .fp-center-vertical-wrap {
     height: 100%;
@@ -20,8 +24,9 @@
   .fp-center-vertical {
     height: 100%;
   }
-  
+
 }
+
 
 //background color;
 .bg-black {
