@@ -1,3 +1,7 @@
-.workplace-training-wrapper {
+.workplace-training-intro-wrapper {
   @include fp-responsive;
+}
+
+.workplace-training-wrapper {
+  margin: rem-calc(150) 0;
 }
