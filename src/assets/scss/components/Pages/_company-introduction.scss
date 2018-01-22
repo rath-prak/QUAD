@@ -1,14 +1,10 @@
 .company-intro-wrapper {
-  background: $white;
-  h5 {
-    text-transform: uppercase;
-    color: $dark-gray;
-  }
+  margin: rem-calc(90) 0;
   p {
-    font-size: rem-calc(18);
+    font-size: rem-calc(16);
   }
-
   .business-links-wrapper {
+    margin-top: rem-calc(30);
     .business-links {
       margin: rem-calc(10) 0;
       padding: rem-calc(10) 0;
@@ -21,18 +17,35 @@
         width: 100%;
       }
     }
+    .link-logo:last-child {
+      img {
+        width: 80%;
+        transform: translateY(-10px);
+      }
+    }
   }
 
 }
 
 @media screen and (min-width: 40em) {
   .company-intro-wrapper {
+    margin: rem-calc(30) 0;
+    padding: rem-calc(30);
     p {
-      font-size: rem-calc(24);
+      font-size: rem-calc(20);
     }
     .business-links {
       margin: rem-calc(40) 0;
       padding: rem-calc(20) 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .company-intro-wrapper {
+    margin: 0;
+    p {
+      font-size: rem-calc(20);
     }
   }
 }

@@ -17,7 +17,14 @@ import Foundation from 'foundation-sites';
 $(document).ready(function() {
 
 	let $workplacefadeUp = $('.workplace-fadeUp');
-	let $businessfadeUp = $('.business-fadeUp');
+	let $busSupportfadeUp = $('.busSupport-fadeUp');
+	let $eventsfadeUp = $('.events-fadeUp');
+
+
+	// Move down one section
+	$('.solution-arrow').on('click', () => {
+			$.fn.pagepiling.moveSectionDown();
+	});
 
 	// Full screen overlay menu
 	overlayNav();
@@ -62,32 +69,35 @@ $(document).ready(function() {
 					};
 
 					if ( index === 4 ) {
-						fadeUp.fadeInText($businessfadeUp);
+						fadeUp.fadeInText($busSupportfadeUp);
+					}
+
+					if ( index === 5 ) {
+						fadeUp.fadeInText($eventsfadeUp);
 					}
 
 				},
 				onLeave: (index, nextIndex, direction) => {
 
-					// if ( index === 2 && direction === 'up' ) {
-					// 	$('#pp-nav').css({
-					// 		'display':'none',
-					// 	});
-					// }
-
 	     		if (index === 3 && direction === 'up' || index === 3 && direction === 'down') {
 	       	 fadeUp.resetfadeText($workplacefadeUp, 0, 20, 1);
-				 };
+					};
 
 				  if (index === 4 && direction === 'up' || index === 4 && direction === 'down') {
-				 	  fadeUp.resetfadeText($businessfadeUp, 0, 20, 1);
+				 	  fadeUp.resetfadeText($busSupportfadeUp, 0, 20, 1);
 				 	};
+
+					if (index === 5 && direction === 'up' || index === 5 && direction === 'down') {
+						fadeUp.resetfadeText($eventsfadeUp, 0, 20, 1);
+					};
+
     		},
 	});
 	// end of page pilling
 
 	// set strate
 	const setState = () => {
-		TweenMax.set([$workplacefadeUp, $businessfadeUp], {
+		TweenMax.set([$workplacefadeUp, $busSupportfadeUp, $eventsfadeUp], {
 			alpha: 0,
 			y: 30,
 		});

@@ -5,6 +5,7 @@
 
 // 2. layout
 // ---------
+@import 'components/layout/mixins';
 @import 'components/layout/grid';
 
 // 3. module
@@ -12,6 +13,7 @@
 @import 'components/module/navigation';
 @import 'components/module/footer';
 @import 'components/module/buttons';
+@import 'components/module/learn-more';
 
 // 5. State
 // ---------

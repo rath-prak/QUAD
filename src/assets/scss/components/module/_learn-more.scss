@@ -1,0 +1,78 @@
+// 'Learn more' side button
+// ------------------------
+
+.scroll-down-wrapper {
+  width: rem-calc(10);
+  z-index: 150;
+  position: absolute;
+  left: rem-calc(30);
+  bottom: rem-calc(50);
+
+  .solution-arrow {
+    img {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+
+  button.scroll-down-reverse {
+    position: absolute;
+    bottom:rem-calc(-26);
+    left: -4px;
+    right: 0;
+    height: 50px;
+    width: 12px;
+    z-index: 1000;
+  }
+
+
+  button.scroll-down-reverse:before {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: $white;
+    border-radius: 100%;
+    -webkit-animation: scroll_down_btn-animation 2s infinite;
+    animation: scroll_down_btn-animation 2s infinite;
+    box-sizing: border-box;
+  }
+
+  @keyframes scroll_down_btn-animation {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @-webkit-keyframes scroll_down_btn-animation {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+}
