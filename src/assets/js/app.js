@@ -26,6 +26,7 @@ $(document).ready(function() {
 			$.fn.pagepiling.moveSectionDown();
 	});
 
+	
 	// Full screen overlay menu
 	overlayNav();
 
