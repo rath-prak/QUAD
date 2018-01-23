@@ -2,8 +2,8 @@
 import whatInput from 'what-input';
 import { TweenMax, Power2, TimelineLite } from "gsap";
 import overlayNav from './components/overlayNav';
-
-import fadeUp from './components/fadeUp.js';
+import fadeUp from './components/fadeUp';
+import hoverUnderline from './components/hoverUnderline';
 
 // window.$ = $;
 
@@ -20,13 +20,14 @@ $(document).ready(function() {
 	let $busSupportfadeUp = $('.busSupport-fadeUp');
 	let $eventsfadeUp = $('.events-fadeUp');
 
+	// Link underline animations
+	hoverUnderline();
 
 	// Move down one section
 	$('.solution-arrow').on('click', () => {
 			$.fn.pagepiling.moveSectionDown();
 	});
 
-	
 	// Full screen overlay menu
 	overlayNav();
 

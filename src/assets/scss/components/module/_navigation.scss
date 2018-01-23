@@ -6,7 +6,10 @@
 // Logo
 // ----
 
-.logo-white, .logo-black, .logo-type-black {
+.logo-white,
+.logo-black,
+.qsol-symbol,
+.logo-type-black {
   position: absolute;
   top: rem-calc(30);
   left: rem-calc(30);
@@ -17,9 +20,9 @@
   }
 }
 
-// .logo-type-black {
-//   width: rem-calc(180);
-// }
+.qsol-symbol {
+  width: rem-calc(60);
+}
 
 // Social Media icons
 
@@ -141,7 +144,10 @@ $bar-spacing: rem-calc(10);
   h1 {
     text-align: center;
     font-size: rem-calc(30);
-    margin-bottom: rem-calc(30);
+    font-weight: 400;
+    a {
+      color: $black;
+    }
   }
 
   .overlay-menu {
@@ -150,13 +156,26 @@ $bar-spacing: rem-calc(10);
     align-items: center;
     height: 100vh;
     justify-content: center;
+
+    .qsol-logo-stacked {
+      width: rem-calc(100);
+    }
   }
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: rem-calc(1080)) {
   .overlay-nav {
     .overlay-menu {
       flex-direction: row;
     }
   }
+}
+
+// Underline hover animation
+.hover-underline-item {
+  margin: 0 auto rem-calc(20);
+  width: rem-calc(100);
+  height: rem-calc(3);
+  transform: scaleX(0);
+  background: $black;
 }
