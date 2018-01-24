@@ -3,5 +3,43 @@
 }
 
 .workplace-training-wrapper {
-  margin: rem-calc(150) 0;
+  margin: rem-calc(100) 0;
+}
+
+.workplace-image-banner {
+  background: url(../img/banner_test.jpg) no-repeat;
+  background-size: cover;
+  height: rem-calc(300);
+  width: 100%;
+  h1 {
+    font-weight: 400;
+    color: $white;
+  }
+  p {
+    color: $white;
+    font-size: rem-calc(22);
+    font-weight: 400;
+  }
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: rem-calc(300);
+  }
+}
+
+.content-item {
+  margin: rem-calc(60) 0;
+  .content-item-img {
+    img {
+      padding: rem-calc(40);
+    }
+  }
+}
+
+.maori-management {
+  p:nth-of-type(2) {
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
 }
