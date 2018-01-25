@@ -1,10 +1,17 @@
 .workplace-training-intro-wrapper {
   @include fp-responsive;
+
+  .aside-image {
+    margin-top: rem-calc(90);
+  }
 }
 
 .workplace-training-wrapper {
   margin: rem-calc(100) 0;
+
 }
+
+
 
 .workplace-image-banner {
   background: url(../img/banner_test.jpg) no-repeat;
