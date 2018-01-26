@@ -11,28 +11,10 @@
 
 }
 
-
-
-.workplace-image-banner {
+.workplace-banner {
   background: url(../img/banner_test.jpg) no-repeat;
   background-size: cover;
-  height: rem-calc(300);
-  width: 100%;
-  h1 {
-    font-weight: 400;
-    color: $white;
-  }
-  p {
-    color: $white;
-    font-size: rem-calc(22);
-    font-weight: 400;
-  }
-  .banner-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: rem-calc(300);
-  }
+  @include fw-img-banner;
 }
 
 .content-item {

@@ -63,3 +63,39 @@
     }
   }
 }
+
+// Social Contact footer
+// Social Media icons
+
+.contact-footer,
+.contact-footer-reverse {
+  position: absolute;
+  bottom: rem-calc(30);
+  right: rem-calc(30);
+  ul {
+    margin: 0;
+    padding: 0;
+  };
+  li, i {
+    color: $dark-gray;
+    list-style-type: none;
+    display: inline-block;
+    font-size: rem-calc(13);
+    text-transform: uppercase;
+    margin-left: rem-calc(5);
+  };
+
+  li:nth-of-type(2) {
+    opacity: 0.5;
+  };
+
+  .landing-contact {
+    cursor: pointer;
+  }
+}
+
+.contact-footer-reverse {
+    li, i {
+      color: $white;
+    }
+}

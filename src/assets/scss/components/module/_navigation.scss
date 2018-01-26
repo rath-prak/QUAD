@@ -24,26 +24,6 @@
   width: rem-calc(60);
 }
 
-// Social Media icons
-
-.social-menu {
-  position: absolute;
-  bottom: rem-calc(30);
-  right: rem-calc(30);
-  z-index: 500;
-  span {
-    color: $white;
-    a {
-      color: $white;
-      margin-left: rem-calc(10);
-      font-weight: 600;
-      text-transform: uppercase;
-      font-size: rem-calc(12);
-    }
-  }
-}
-
-
 
 // Toggle Menu
 // ----------------

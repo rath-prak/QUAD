@@ -33,3 +33,24 @@
     }
   }
 }
+
+// full width banner
+@mixin fw-img-banner {
+  height: rem-calc(300);
+  width: 100%;
+  h1 {
+    font-weight: 400;
+    color: $white;
+  }
+  p {
+    color: $white;
+    font-size: rem-calc(22);
+    font-weight: 400;
+  }
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: rem-calc(300);
+  }
+}

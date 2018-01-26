@@ -15,6 +15,7 @@
     }
   }
 
+  button.scroll-down,
   button.scroll-down-reverse {
     position: absolute;
     bottom:rem-calc(-26);
@@ -25,17 +26,21 @@
     z-index: 1000;
   }
 
-
+  button.scroll-down:before,
   button.scroll-down-reverse:before {
     position: absolute;
     content: '';
     width: 6px;
     height: 6px;
-    background-color: $white;
+    background-color: $black;
     border-radius: 100%;
     -webkit-animation: scroll_down_btn-animation 2s infinite;
     animation: scroll_down_btn-animation 2s infinite;
     box-sizing: border-box;
+  }
+
+  button.scroll-down-reverse:before {
+    background-color: $white;
   }
 
   @keyframes scroll_down_btn-animation {

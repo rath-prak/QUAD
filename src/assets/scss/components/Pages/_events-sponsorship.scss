@@ -1,3 +1,35 @@
-.events-wrapper {
+.events-wrapper-intro {
   @include fp-responsive;
+}
+
+.events-banner {
+  background: url(../img/banner_test.jpg) no-repeat;
+  background-size: cover;
+  @include fw-img-banner;
+}
+
+.event-card {
+  padding: rem-calc(30);
+  h5 {
+    text-transform: uppercase;
+    color: $dark-gray;
+  }
+}
+
+// Detailed planning card
+.event-card:nth-of-type(1) {
+  background: $brand-color;
+  color: $white;
+  h5 {
+    color: $white;
+  }
+}
+
+// Strategic planning
+.event-card:nth-of-type(2) {
+  background: lighten($brand-color, 5);
+  color: $white;
+  h5 {
+    color: $white;
+  }
 }

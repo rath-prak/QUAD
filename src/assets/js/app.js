@@ -28,6 +28,12 @@ $(document).ready(function() {
 			$.fn.pagepiling.moveSectionDown();
 	});
 
+	// Contact-footer, move to footer
+
+	$('.landing-contact').on('click', () => {
+			$.fn.pagepiling.moveTo(7);
+	})
+
 	// Full screen overlay menu
 	overlayNav();
 
