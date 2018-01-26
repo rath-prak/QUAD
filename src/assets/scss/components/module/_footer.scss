@@ -55,10 +55,8 @@ form {
     font-size: rem-calc(12);
     .input-box, textarea {
       color: $white;
-      // background: transparent;
       background: #2a2a2a;
       border: none;
-      // border-bottom: 1px solid $dark-gray;
     }
     input,
     .input-box:focus,
@@ -67,5 +65,26 @@ form {
       color: $white;
     }
   }
+}
 
+// Back to top button
+.back-to-top-btn {
+  position: absolute;
+  bottom: rem-calc(30);
+  right: rem-calc(30);
+  cursor: pointer;
+  width: rem-calc(40);
+}
+
+// Copyright
+.copyright {
+  position: absolute;
+  bottom: rem-calc(30);
+  left: rem-calc(30);
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: rem-calc(12);
+    color: $light-gray;
+  }
 }

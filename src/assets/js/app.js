@@ -25,14 +25,18 @@ $(document).ready(function() {
 
 	// Move down one section
 	$('.solution-arrow').on('click', () => {
-			$.fn.pagepiling.moveSectionDown();
+		$.fn.pagepiling.moveSectionDown();
 	});
 
 	// Contact-footer, move to footer
-
 	$('.landing-contact').on('click', () => {
-			$.fn.pagepiling.moveTo(7);
-	})
+		$.fn.pagepiling.moveTo(7);
+	});
+
+	// back to top button
+	$('.back-to-top-btn').on('click', () => {
+		$.fn.pagepiling.moveTo(1);
+	});
 
 	// Full screen overlay menu
 	overlayNav();
