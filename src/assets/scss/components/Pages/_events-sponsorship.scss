@@ -2,6 +2,8 @@
   @include fp-responsive;
 }
 
+// Events and Sponsorship page
+// ---------------------------
 .events-banner {
   background: url(../img/banner_test.jpg) no-repeat;
   background-size: cover;
@@ -10,9 +12,25 @@
 
 .event-card {
   padding: rem-calc(30);
+  background: $light-gray;
+  margin: 0;
   h5 {
     text-transform: uppercase;
     color: $dark-gray;
+  }
+}
+
+.events-wrapper {
+  .events-content-wrapper {
+    margin: rem-calc(30) 0;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .events-wrapper {
+    .events-content-wrapper {
+      margin: rem-calc(60) 0;
+    }
   }
 }
 

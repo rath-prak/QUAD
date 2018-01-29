@@ -24,23 +24,23 @@ const overlayNav = () => {
       slide();
   })
 
-  $menuWorkplace.on('click', function(){
-    $('.bar').toggleClass('animate');
-    slide();
-  	$.fn.pagepiling.moveTo(3);
-  });
-
-  $menuBusSupport.on('click', function(){
-    $('.bar').toggleClass('animate');
-    slide();
-    $.fn.pagepiling.moveTo(4);
-  });
-
-  $events.on('click', function(){
-    $('.bar').toggleClass('animate');
-    slide();
-    $.fn.pagepiling.moveTo(5);
-  });
+  // $menuWorkplace.on('click', function(){
+  //   $('.bar').toggleClass('animate');
+  //   slide();
+  // 	$.fn.pagepiling.moveTo(3);
+  // });
+  //
+  // $menuBusSupport.on('click', function(){
+  //   $('.bar').toggleClass('animate');
+  //   slide();
+  //   $.fn.pagepiling.moveTo(4);
+  // });
+  //
+  // $events.on('click', function(){
+  //   $('.bar').toggleClass('animate');
+  //   slide();
+  //   $.fn.pagepiling.moveTo(5);
+  // });
 
 
 }
