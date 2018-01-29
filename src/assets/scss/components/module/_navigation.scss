@@ -112,7 +112,7 @@ $bar-spacing: rem-calc(10);
 // ------------
 
 .overlay-nav {
-  z-index: 1000;
+  z-index: 3000;
   background: $white;
   position: fixed;
   transform: translateY(-100%);

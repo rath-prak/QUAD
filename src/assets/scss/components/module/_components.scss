@@ -1,0 +1,8 @@
+.card-item {
+  padding: rem-calc(20);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+  p {
+    margin-bottom: 0;
+  }
+  margin-bottom: rem-calc(30);
+}

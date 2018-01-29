@@ -10,15 +10,6 @@
   @include fw-img-banner;
 }
 
-.event-card {
-  padding: rem-calc(30);
-  background: $light-gray;
-  margin: 0;
-  h5 {
-    text-transform: uppercase;
-    color: $dark-gray;
-  }
-}
 
 .events-wrapper {
   .events-content-wrapper {
@@ -34,20 +25,61 @@
   }
 }
 
-// Detailed planning card
-.event-card:nth-of-type(1) {
-  background: $brand-color;
-  color: $white;
-  h5 {
-    color: $white;
+.events-content-intro {
+  p {
+    font-size: rem-calc(18);
+    font-weight: 400;
+  }
+  p:first-child {
+    margin-bottom: rem-calc(30);
   }
 }
 
-// Strategic planning
-.event-card:nth-of-type(2) {
-  background: lighten($brand-color, 5);
-  color: $white;
+.event-square {
+  padding: rem-calc(30);
+  background: $light-gray;
+  margin: 0;
   h5 {
-    color: $white;
+    text-transform: uppercase;
+  }
+  p, li {
+    margin: 0;
+    font-weight: 400;
+    font-size: rem-calc(15);
+  }
+}
+
+// Detailed planning square
+.square-one {
+  background: lighten($brand-color, 5);
+}
+
+.square-two {
+  background: lighten($brand-color, 15);
+}
+
+.square-three {
+  background: lighten($brand-color, 15);
+}
+
+.square-four {
+  background: lighten($brand-color, 20);
+}
+
+.square-five{
+  background: lighten($brand-color, 30);
+}
+
+.square-six{
+  background: lighten($brand-color, 25);
+  p {
+    margin-bottom: rem-calc(5);
+  }
+}
+
+.square-seven{
+  background: lighten($brand-color, 15);
+  p {
+    margin-bottom: rem-calc(5);
   }
 }

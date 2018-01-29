@@ -38,6 +38,7 @@
 @mixin fw-img-banner {
   height: rem-calc(300);
   width: 100%;
+  margin-top: rem-calc(100);
   h1 {
     font-weight: 400;
     color: $white;
