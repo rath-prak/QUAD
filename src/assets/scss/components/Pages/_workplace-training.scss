@@ -6,11 +6,27 @@
   }
 }
 
-
 .workplace-banner {
   background: url(../img/banner_test.jpg) no-repeat;
   background-size: cover;
   @include fw-img-banner;
+}
+
+.workplace-training-content {
+  margin: rem-calc(60) 0 rem-calc(90);
+
+  .workplace-training-content-intro {
+    h1 {
+      font-weight: 400;
+    }
+    p {
+      font-size: rem-calc(18);
+      font-weight: 400;
+    }
+    p:nth-of-type(1) {
+      margin-bottom: rem-calc(60);
+    }
+  }
 }
 
 .content-item {

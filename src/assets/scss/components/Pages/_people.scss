@@ -1,6 +1,7 @@
 .people-wrapper {
   text-align: center;
-  margin: rem-calc($global-margin*5) 0;
+  margin: rem-calc($global-margin*6) 0;
+  height: rem-calc(1000);
   .people-intro {
     font-size: rem-calc(18);
     font-weight: 400;
@@ -14,9 +15,9 @@
   }
 }
 
-
 @media screen and (min-width: 40em) {
   .people-wrapper {
     margin: 0;
+    height: 100%;
   }
 }

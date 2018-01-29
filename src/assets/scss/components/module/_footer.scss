@@ -1,11 +1,9 @@
 .footer-wrapper {
-  margin: rem-calc($global-margin*5) 0;
-
-}
-
-@media screen and (min-width: 40em) {
-  .footer-wrapper {
-    margin: 0;
+  position: relative;
+  height: rem-calc(1090);
+  background: $black;
+  .btn-primary {
+    margin-bottom: rem-calc(30);
   }
 }
 
@@ -48,6 +46,7 @@ form {
   .form-title {
     font-size: rem-calc(20);
     margin-bottom: rem-calc(30);
+    padding-top: rem-calc(90);
   }
   label {
     color: $white;
@@ -86,5 +85,17 @@ form {
     padding: 0;
     font-size: rem-calc(12);
     color: $light-gray;
+  }
+}
+
+
+@media screen and (min-width: 40em) {
+  .footer-wrapper {
+    height: 100%;
+  }
+  form {
+    .form-title {
+      padding-top: rem-calc(0);
+    }
   }
 }
