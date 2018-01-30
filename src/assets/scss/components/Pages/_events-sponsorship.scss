@@ -2,6 +2,14 @@
   @include fp-responsive;
 }
 
+@media screen and (min-width: rem-calc(630)) {
+  .events-wrapper-intro {
+    .aside-image {
+      margin-top: rem-calc(30);
+    }
+  }
+}
+
 // Events and Sponsorship page
 // ---------------------------
 .events-banner {

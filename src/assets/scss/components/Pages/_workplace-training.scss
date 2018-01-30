@@ -1,8 +1,13 @@
 .workplace-training-intro-wrapper {
   @include fp-responsive;
 
-  .aside-image {
-    margin-top: rem-calc(90);
+}
+
+@media screen and (min-width: rem-calc(715)) {
+  .workplace-training-intro-wrapper {
+    .aside-image {
+      margin-top: rem-calc(30);
+    }
   }
 }
 
@@ -15,7 +20,7 @@
 }
 
 .workplace-training-content {
-  margin: rem-calc(60) 0 rem-calc(90);
+  margin: rem-calc(60) 0;
 
   .workplace-training-content-intro {
     h1 {
@@ -31,7 +36,7 @@
 .content-item {
   margin: rem-calc(30) 0;
   .content-item-img {
-    width: rem-calc(250);
+    width: rem-calc(200);
     img {
       width: 100%;
     }
@@ -41,26 +46,9 @@
 
 @media screen and (min-width: rem-calc(780)) {
   .content-item {
-    margin: rem-calc(30) 0;
     .content-item-img {
       width: rem-calc(250);
-      img {
-        width: 100%;
-      }
     }
     flex-direction: row;
   }
 }
-
-// @media screen and (min-width: 40em) {
-//   .content-item {
-//     margin: rem-calc(30) 0;
-//     .content-item-img {
-//       width: rem-calc(250);
-//       img {
-//         width: 100%;
-//       }
-//     }
-//     flex-direction: row;
-//   }
-// }
