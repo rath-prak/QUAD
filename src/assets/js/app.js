@@ -4,10 +4,9 @@ import { TweenMax, Power2, TimelineLite } from "gsap";
 import overlayNav from './components/overlayNav';
 import fadeUp from './components/fadeUp';
 import hoverUnderline from './components/hoverUnderline';
+import scrollToTop from './components/scrollToTop';
 
 // window.$ = $;
-
-
 
 import Foundation from 'foundation-sites';
 // If you want to pick and choose which modules to include, comment out the above and uncomment
@@ -23,6 +22,8 @@ $(document).ready(function() {
 	// Link underline animations
 	hoverUnderline();
 
+
+
 	// Move down one section
 	$('.solution-arrow').on('click', () => {
 		$.fn.pagepiling.moveSectionDown();
@@ -37,6 +38,9 @@ $(document).ready(function() {
 	$('.back-to-top-btn').on('click', () => {
 		$.fn.pagepiling.moveTo(1);
 	});
+
+	// Scroll to top for footer_02
+	scrollToTop();
 
 	// Full screen overlay menu
 	overlayNav();

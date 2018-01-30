@@ -7,6 +7,18 @@
   }
 }
 
+.footer-wrapper-02 {
+  // padding: rem-calc(90) 0;
+}
+
+@media screen and (min-width: 40em) {
+  .footer-wrapper-02 {
+    padding: rem-calc(90) 0;
+  }
+}
+
+
+
 .contact {
   margin-bottom: rem-calc(30);
   .intro-heading {
@@ -67,7 +79,8 @@ form {
 }
 
 // Back to top button
-.back-to-top-btn {
+.back-to-top-btn,
+.backToTop {
   position: absolute;
   bottom: rem-calc(30);
   right: rem-calc(30);

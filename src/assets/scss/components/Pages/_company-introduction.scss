@@ -43,6 +43,7 @@
 
 @media screen and (min-width: 1080px) {
   .company-intro-wrapper {
+    padding: rem-calc(0);
     margin: 0;
     p {
       font-size: rem-calc(20);
