@@ -60,7 +60,7 @@ $(document).ready(function() {
             'textColor': '#000',
             'bulletsColor': '#000',
             'position': 'right',
-            'tooltips': ['section1', 'section2', 'section3', 'section4']
+            'tooltips': []
         },
        	normalScrollElements: 'pp-scrollable',
         normalScrollElementTouchThreshold: 5,
@@ -86,10 +86,20 @@ $(document).ready(function() {
 
 					if ( index === 4 ) {
 						fadeUp.fadeInText($busSupportfadeUp);
+						$('#pp-nav').addClass('pp-nav-show');
 					}
 
 					if ( index === 5 ) {
 						fadeUp.fadeInText($eventsfadeUp);
+						$('#pp-nav').addClass('pp-nav-show');
+					}
+
+					if ( index === 6 ) {
+						$('#pp-nav').removeClass('pp-nav-show');
+					}
+
+					if ( index === 7 ) {
+						$('#pp-nav').removeClass('pp-nav-show');
 					}
 
 				},

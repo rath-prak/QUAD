@@ -112,6 +112,10 @@ html, body {
     background: #333;
 }
 
+/* #pp-nav li .active span {
+  background: rgba(255, 255, 255, 0.6) !important;
+} */
+
 
 #pp-nav span,
 .pp-slidesNav span {
@@ -124,6 +128,10 @@ html, body {
     border-radius: 50%;
     position: absolute;
     z-index: 1;
+}
+
+.pp-nav-white {
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 .pp-tooltip {
