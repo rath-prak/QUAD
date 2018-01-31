@@ -1,10 +1,12 @@
 // import $ from 'jquery';
 import whatInput from 'what-input';
 import { TweenMax, Power2, TimelineLite } from "gsap";
+import Vivus from 'vivus';
 import overlayNav from './components/overlayNav';
 import fadeUp from './components/fadeUp';
 import hoverUnderline from './components/hoverUnderline';
 import scrollToTop from './components/scrollToTop';
+import pagePreloader from './components/pagePreloader';
 
 // window.$ = $;
 
@@ -14,6 +16,14 @@ import Foundation from 'foundation-sites';
 //import './lib/foundation-explicit-pieces';
 
 $(document).ready(function() {
+
+	// preloader
+
+	// PRE-LAODER
+  $(window).load(function(){
+    setTimeout(pagePreloader.background, 2200);
+    pagePreloader.preloader();
+  });
 
 	let $workplacefadeUp = $('.workplace-fadeUp');
 	let $busSupportfadeUp = $('.busSupport-fadeUp');

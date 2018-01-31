@@ -130,9 +130,9 @@ html, body {
     z-index: 1;
 }
 
-.pp-nav-white {
+/* .pp-nav-white {
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
-}
+} */
 
 .pp-tooltip {
     position: absolute;

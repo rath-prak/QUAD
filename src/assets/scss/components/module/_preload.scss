@@ -1,0 +1,18 @@
+.preload-wrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $black;
+  z-index: 10000;
+}
+
+.preload-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#qsol-logo-outline {
+  width: rem-calc(150);
+}
