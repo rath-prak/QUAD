@@ -121,7 +121,7 @@ $yellow04: #f9e48c;
 // }
 
 .logo-symbol {
-  background: linear-gradient(-45deg, $yellow04, $yellow02, $yellow03, $yellow01, $yellow04, $yellow02 );
+  background: linear-gradient(-45deg, $yellow04, #f9e79b, $yellow02, $yellow03, $yellow01, $yellow04, $yellow02 );
   background-size: 300% 300%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
