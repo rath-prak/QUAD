@@ -104,3 +104,63 @@
     display: block;
   }
 }
+
+
+// Logo symbol animate
+$yellow01: #dba92c;
+$yellow02: #e3b73a;
+$yellow03: #f2d76a;
+$yellow04: #f9e48c;
+
+// .logo-symbol {
+//   background: linear-gradient(-45deg, $yellow01, $yellow02, $yellow03, $yellow04);
+//   background-size: 400% 400%;
+//   -webkit-animation: Gradient 15s ease infinite;
+//   -moz-animation: Gradient 15s ease infinite;
+//   animation: Gradient 15s ease infinite;
+// }
+
+.logo-symbol {
+  background: linear-gradient(-45deg, $yellow04, $yellow02, $yellow03, $yellow01, $yellow04, $yellow02 );
+  background-size: 300% 300%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
