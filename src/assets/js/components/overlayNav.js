@@ -12,16 +12,21 @@ const overlayNav = () => {
   });
 
   const tl = new TimelineMax({ delay:6, paused:true, reversed:true })
-  tl.to($overlayNav, 1, { y: '0%', ease: Power2.easeOut })
+  tl.to($overlayNav, 0.8, { y: '0%', ease: Power2.easeOut })
 
   let slide = () => {
     setTimeout(function(){
         tl.reversed() ? tl.restart() : tl.reverse();
-      }, 600);
+      }, 400);
   }
 
   $toggleMenu.on('click', () => {
       slide();
+  })
+
+  $('.menu-link').on('click', () => {
+      tl.reverse();
+      $('.bar').removeClass('animate');
   })
 
   // $menuWorkplace.on('click', function(){

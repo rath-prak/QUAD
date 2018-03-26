@@ -1,7 +1,6 @@
 // import $ from 'jquery';
 import whatInput from 'what-input';
 import { TweenMax, Power2, TimelineLite } from "gsap";
-import Vivus from 'vivus';
 import overlayNav from './components/overlayNav';
 import fadeUp from './components/fadeUp';
 import hoverUnderline from './components/hoverUnderline';
@@ -20,10 +19,6 @@ $(document).ready(function() {
 	// preloader
 
 	// PRE-LAODER
-  $(window).load(function(){
-    setTimeout(pagePreloader.background, 2200);
-    pagePreloader.preloader();
-  });
 
 	let $workplacefadeUp = $('.workplace-fadeUp');
 	let $busSupportfadeUp = $('.busSupport-fadeUp');
@@ -90,18 +85,18 @@ $(document).ready(function() {
 
 					//Fade in text animation
 					if ( index === 3 ) {
-						fadeUp.fadeInText($workplacefadeUp);
-						$('#pp-nav').addClass('pp-nav-show');
+            fadeUp.fadeInText($busSupportfadeUp);
+            $('#pp-nav').addClass('pp-nav-show');
 					};
 
 					if ( index === 4 ) {
-						fadeUp.fadeInText($busSupportfadeUp);
+            fadeUp.fadeInText($eventsfadeUp);
 						$('#pp-nav').addClass('pp-nav-show');
 					}
 
 					if ( index === 5 ) {
-						fadeUp.fadeInText($eventsfadeUp);
-						$('#pp-nav').addClass('pp-nav-show');
+            fadeUp.fadeInText($workplacefadeUp);
+            $('#pp-nav').addClass('pp-nav-show');
 					}
 
 					if ( index === 6 ) {
@@ -116,15 +111,15 @@ $(document).ready(function() {
 				onLeave: (index, nextIndex, direction) => {
 
 	     		if (index === 3 && direction === 'up' || index === 3 && direction === 'down') {
-	       	 fadeUp.resetfadeText($workplacefadeUp, 0, 20, 1);
+	       	 fadeUp.resetfadeText($busSupportfadeUp, 0, 20, 1);
 					};
 
 				  if (index === 4 && direction === 'up' || index === 4 && direction === 'down') {
-				 	  fadeUp.resetfadeText($busSupportfadeUp, 0, 20, 1);
+            fadeUp.resetfadeText($eventsfadeUp, 0, 20, 1);
 				 	};
 
 					if (index === 5 && direction === 'up' || index === 5 && direction === 'down') {
-						fadeUp.resetfadeText($eventsfadeUp, 0, 20, 1);
+            fadeUp.resetfadeText($workplacefadeUp, 0, 20, 1);
 					};
 
     		},
@@ -133,7 +128,7 @@ $(document).ready(function() {
 
 	// set strate
 	const setState = () => {
-		TweenMax.set([$workplacefadeUp, $busSupportfadeUp, $eventsfadeUp], {
+		TweenMax.set([$busSupportfadeUp, $eventsfadeUp, $workplacefadeUp], {
 			alpha: 0,
 			y: 30,
 		});
