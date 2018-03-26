@@ -29,24 +29,6 @@ const overlayNav = () => {
       $('.bar').removeClass('animate');
   })
 
-  // $menuWorkplace.on('click', function(){
-  //   $('.bar').toggleClass('animate');
-  //   slide();
-  // 	$.fn.pagepiling.moveTo(3);
-  // });
-  //
-  // $menuBusSupport.on('click', function(){
-  //   $('.bar').toggleClass('animate');
-  //   slide();
-  //   $.fn.pagepiling.moveTo(4);
-  // });
-  //
-  // $events.on('click', function(){
-  //   $('.bar').toggleClass('animate');
-  //   slide();
-  //   $.fn.pagepiling.moveTo(5);
-  // });
-
 
 }
 
